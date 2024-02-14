@@ -20,7 +20,7 @@ export default function Home() {
         <h1 className="text-6xl  mb-10">MuggleLink</h1>
         <div className="flex justify-center items-center gap-4">
           <h3 className="text-3xl">
-            crypto on 
+            Accept crypto on 
           </h3>
           <AnimatedText/>
         </div>
@@ -30,11 +30,12 @@ export default function Home() {
           <li>Web3 Subscription & Escrow</li>
           <li>1% fee, settle immediately</li>
         </ul>
-
         <div className="flex flex-col gap-4 items-center justify-center ml-10 mt-10 text-xl font-semibold">
-          <button className="bg-white text-blue-600 border rounded-full py-2 px-20">
-            Start for Free
-          </button>
+        <button className="py-2 px-20 bg-white rounded-full font-bold text-[#8c52ff] hover:bg-[#8c52ff] hover:text-white">
+          Start for Free
+        </button>
+
+
           <h1 className="">Accept Crypto in 1 min!</h1>
         </div>
       </div>
@@ -113,12 +114,12 @@ export default function Home() {
                 <form>
                   <div className="grid w-full items-center gap-4">
                     <div className="flex flex-col space-y-1.5">
-                      <Label htmlFor="name">Name</Label>
-                      <Input id="name" autoComplete="off" placeholder="Name" />
+                    <Label htmlFor="name">Name</Label>
+                      <Input id="name" autoComplete="off" placeholder="Name" disabled/>
                     </div>
                     <div className="flex flex-col space-y-1.5">
                       <Label htmlFor="email">E-mail</Label>
-                      <Input id="email" className="outline-none" autoComplete="off" placeholder="something@gmail.com" />
+                      <Input id="email" className="outline-none" autoComplete="off" disabled placeholder="something@gmail.com" />
                     </div>
                   </div>
                 </form>
@@ -127,7 +128,7 @@ export default function Home() {
             </Card>
           </CardContent>
           <CardFooter className="flex justify-center">
-            <button className="py-2 px-20 bg-blue-600 rounded-full font-bold text-white hover:bg-blue-500">Pay</button>
+          <button className="py-2 px-20 bg-[#8c52ff] rounded-full font-bold text-white hover:bg-[#7846d6]">Pay</button>
           </CardFooter>
         </Card>
       </div>
