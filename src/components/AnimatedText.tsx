@@ -42,6 +42,7 @@ const AnimatedText: React.FC = () => {
             src="/spotify.png"
             width={100}
             height={100}
+            
             alt="Spotify"
             className="w-20 h-20"
           />

@@ -47,7 +47,7 @@ export default function Home() {
               <FerrisWheel />
             </CardTitle>
             <CardDescription>
-              <h1 className="text-xl font-semibold text-blue-600 mb-4">
+              <h1 className="text-xl font-semibold text-[#8c52ff] mb-4">
                 USDT $160
               </h1>
               <div className="flex justify-between text-gray-600 my-2">
@@ -62,19 +62,19 @@ export default function Home() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Card className="p-0 bg-yellow-800/10 rounded-lg">
+            <Card className="p-0 bg-[#f8f6f7] rounded-lg">
               <CardHeader className="p-4">
                 <CardTitle className="flex justify-between">
                   <h1 className=" text-base tracking-wide font-medium text-gray-600">
                     Pay with crypto
                   </h1>
                   <div className="flex gap-1">
-                    <div className="h-6 w-auto">
+                  <div className="h-6 w-auto">
                       <Image
-                        src={"/tron.png"}
+                        src={"/Arbitrum.png"}
                         width={24}
                         height={24}
-                        alt="tron"
+                        alt="arbitrum"
                         objectFit="contain"
                       />
                     </div>
@@ -87,6 +87,16 @@ export default function Home() {
                         objectFit="contain"
                       />
                     </div>
+                    <div className="h-6 w-auto">
+                      <Image
+                        src={"/tron.png"}
+                        width={24}
+                        height={24}
+                        alt="tron"
+                        objectFit="contain"
+                      />
+                    </div>
+                  
                     <div className="h-6 w-auto">
                       <Image
                         src={"/USDT.png"}
