@@ -15,23 +15,23 @@ import AnimatedText from "@/components/AnimatedText";
 
 export default function Home() {
   return (
-    <div className="flex justify-between items-center gap-10 mx-72 my-56 tracking-wide">
-      <div className="flex flex-col items-start justify-start w-full text-white">
-        <h1 className="text-6xl  mb-10">MuggleLink</h1>
-        <div className="flex justify-center items-center gap-4">
-          <h3 className="text-3xl">
+    <div className="flex flex-col sm:flex-row justify-between items-center gap-2 md:gap-10 mx-4 md:mx-auto w-[95%] md:w-[80%] my-32 sm:my-56 tracking-wide">
+      <div className="flex flex-col items-center justify-center sm:items-start sm:justify-start w-full text-white">
+      <h1 className="text-4xl md:text-6xl mb-10 font-bold">MuggleLink</h1>
+        <div className="flex justify-center items-center gap-2 flex-col md:flex-row">
+          <h3 className="text-xl md:text-3xl">
             Accept crypto on 
           </h3>
           <AnimatedText/>
         </div>
-        <ul className="list-disc list-inside ml-10 my-8 text-xl font-semibold">
-          <li>Universal Social Platform Integration</li>
-          <li>No-code, start in minutes</li>
-          <li>Web3 Subscription & Escrow</li>
-          <li>1% fee, settle immediately</li>
+        <ul className="list-disc list-inside ml-4 md:ml-10 my-8 text-base md:text-xl">
+        <li>Universal Social Platform Integration</li>
+            <li>No-code, start in minutes</li>
+            <li>Web3 Subscription & Escrow</li>
+            <li>1% fee, settle immediately</li>
         </ul>
-        <div className="flex flex-col gap-4 items-center justify-center ml-10 mt-10 text-xl font-semibold">
-        <button className="py-2 px-20 bg-white rounded-full font-bold text-[#8c52ff] hover:bg-[#8c52ff] hover:text-white">
+        <div className="flex flex-col gap-4 items-center justify-center ml-2 md:ml-10 mt-4 md:mt-10 text-base md:text-xl font-semibold">
+        <button className="py-2 px-6 md:px-20 bg-white rounded-full font-semibold md:font-bold text-[#8c52ff] hover:bg-[#8c52ff] hover:text-white">
           Start for Free
         </button>
 
@@ -39,8 +39,8 @@ export default function Home() {
           <h1 className="">Accept Crypto in 1 min!</h1>
         </div>
       </div>
-      <div className="flex items-center justify-center w-full">
-        <Card className="w-[400px] rounded-3xl">
+      <div className="flex w-full mt-6 px-4 sm:mt-0 sm:px-0">
+        <Card className="w-full md:w-[400px] rounded-3xl">
           <CardHeader>
             <CardTitle className="flex justify-between">
               <h1>AI Future Inc.</h1>
@@ -48,7 +48,7 @@ export default function Home() {
             </CardTitle>
             <CardDescription>
               <h1 className="text-xl font-semibold text-[#8c52ff] mb-4">
-                USDT $160
+                $160
               </h1>
               <div className="flex justify-between text-gray-600 my-2">
                 <span>Monthly Subscription Fee</span>
@@ -65,7 +65,7 @@ export default function Home() {
             <Card className="p-0 bg-[#f8f6f7] rounded-lg">
               <CardHeader className="p-4">
                 <CardTitle className="flex justify-between">
-                  <h1 className=" text-base tracking-wide font-medium text-gray-600">
+                  <h1 className=" text-sm sm-text-base tracking-wide font-medium text-gray-600">
                     Pay with crypto
                   </h1>
                   <div className="flex gap-1">
@@ -125,11 +125,11 @@ export default function Home() {
                   <div className="grid w-full items-center gap-4">
                     <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="name">Name</Label>
-                      <Input id="name" autoComplete="off" placeholder="Name" disabled/>
+                      <Input id="name" autoComplete="off" disabled/>
                     </div>
                     <div className="flex flex-col space-y-1.5">
                       <Label htmlFor="email">E-mail</Label>
-                      <Input id="email" className="outline-none" autoComplete="off" disabled placeholder="something@gmail.com" />
+                      <Input id="email" className="outline-none" autoComplete="off" disabled />
                     </div>
                   </div>
                 </form>
