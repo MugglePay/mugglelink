@@ -6,80 +6,72 @@ import Image from "next/image";
 // LogoComponent.tsx
 const AnimatedText: React.FC = () => {
   // State to manage the current logo
-  const [currentLogo, setCurrentLogo] = useState("youtube"); // 'youtube', 'spotify', 'discord'
+  const [currentLogo, setCurrentLogo] = useState("Youtube"); // 'youtube', 'spotify', 'discord' // Use useEffect to cycle through logos
 
-  // Use useEffect to cycle through logos
   useEffect(() => {
-    const logos = ["youtube", "discord", "x", "telegram"];
+    const logos = ["Youtube", "Discord", "X.com", "Telegram"];
     let currentLogoIndex = 0;
 
     const intervalId = setInterval(() => {
       currentLogoIndex = (currentLogoIndex + 1) % logos.length;
       setCurrentLogo(logos[currentLogoIndex]);
-    }, 3000); // Change logo every 3 seconds
+    }, 1000); // Change logo every 1 seconds
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, []);
 
   return (
-    <div className="transition-all duration-500 ease-in-out text-3xl">
-      {currentLogo === "youtube" && (
-        <div className={`flex justify-center items-center gap-4`}>
-          <h2>Youtube</h2>
+    <div className="transition-all duration-500 ease-in-out text-xl md:text-3xl">
+      {currentLogo === "Youtube" && (
+        <div className={`flex justify-center items-center gap-3`}>
+          <h2 className="font-bold">Youtube</h2>
           <Image
             src="/youtube.png"
             width={200}
             height={200}
             alt="YouTube"
-            className="w-20 h-20"
+            className="w-20 h-20" // Reduce icon size by setting a fixed width/height
+            style={{ maxWidth: 50, maxHeight: 50 }}
           />
         </div>
       )}
-      {/* {currentLogo === "spotify" && (
-        <div className="flex justify-center items-center gap-4">
-          <h2>Spotify</h2>
-          <Image
-            src="/spotify.png"
-            width={100}
-            height={100}
-            alt="Spotify"
-            className="w-20 h-20"
-          />
-        </div>
-      )} */}
-      {currentLogo === "discord" && (
-        <div className="flex justify-center items-center gap-4">
-          <h2>Discord</h2>
+      {currentLogo === "Discord" && (
+        <div className="flex justify-center items-center gap-2">
+          <h2 className="font-bold">Discord</h2>
           <Image
             src="/discord.png"
             width={100}
             height={100}
             alt="Discord"
             className="w-20 h-20"
+            style={{ maxWidth: 50, maxHeight: 50 }}
           />
         </div>
       )}
-       {currentLogo === "x" && (
-        <div className="flex justify-center items-center gap-4">
-          <h2>X</h2>
+      {currentLogo === "X.com" && (
+        <div className="flex justify-center items-center gap-2">
+          <h2 className="font-bold">X</h2>
           <Image
-            src="/x.png"
+            src="/x (2).png"
             width={50}
             height={50}
-            alt="x"
+            alt="X"
             className="w-20 h-20"
+            style={{ maxWidth: 50, maxHeight: 50 }}
           />
         </div>
       )}
-       {currentLogo === "telegram" && (
-        <div className="flex justify-center items-center gap-4">
-          <h2>Telegram</h2>
+
+      {currentLogo === "Telegram" && (
+        <div className="flex justify-center items-center gap-3">
+          <h2 className="font-bold">Telegram</h2>
           <Image
-            src="/telegram.png"
+            src="/telegram (1).png"
             width={100}
             height={100}
-            alt="telegram"
+            alt="Telegram"
             className="w-20 h-20"
+            style={{ maxWidth: 50, maxHeight: 50 }}
           />
         </div>
       )}
