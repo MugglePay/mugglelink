@@ -31,11 +31,7 @@ const AnimatedText: React.FC = () => {
             height={200}
             alt="YouTube"
             className="w-20 h-20" // Reduce icon size by setting a fixed width/height
-<<<<<<< HEAD
             style={{ maxWidth: 45, maxHeight: 45 }}
-=======
-            style={{ maxWidth: 50, maxHeight: 50 }}
->>>>>>> 3be9180b37d8bc6019b0a2c817b6db4fa071ee94
           />
         </div>
       )}
@@ -48,11 +44,7 @@ const AnimatedText: React.FC = () => {
             height={100}
             alt="Discord"
             className="w-20 h-20"
-<<<<<<< HEAD
             style={{ maxWidth: 55, maxHeight: 55 }}
-=======
-            style={{ maxWidth: 50, maxHeight: 50 }}
->>>>>>> 3be9180b37d8bc6019b0a2c817b6db4fa071ee94
           />
         </div>
       )}
@@ -60,20 +52,12 @@ const AnimatedText: React.FC = () => {
         <div className="flex justify-center items-center gap-2">
           <h2 className="font-bold">X</h2>
           <Image
-<<<<<<< HEAD
             src="/x.png"
-=======
-            src="/x (2).png"
->>>>>>> 3be9180b37d8bc6019b0a2c817b6db4fa071ee94
             width={50}
             height={50}
             alt="X"
             className="w-20 h-20"
-<<<<<<< HEAD
             style={{ maxWidth: 40, maxHeight: 40 }}
-=======
-            style={{ maxWidth: 50, maxHeight: 50 }}
->>>>>>> 3be9180b37d8bc6019b0a2c817b6db4fa071ee94
           />
         </div>
       )}
@@ -82,20 +66,12 @@ const AnimatedText: React.FC = () => {
         <div className="flex justify-center items-center gap-3">
           <h2 className="font-bold">Telegram</h2>
           <Image
-<<<<<<< HEAD
             src="/telegram.png"
-=======
-            src="/telegram (1).png"
->>>>>>> 3be9180b37d8bc6019b0a2c817b6db4fa071ee94
             width={100}
             height={100}
             alt="Telegram"
             className="w-20 h-20"
-<<<<<<< HEAD
             style={{ maxWidth: 40, maxHeight: 40 }}
-=======
-            style={{ maxWidth: 50, maxHeight: 50 }}
->>>>>>> 3be9180b37d8bc6019b0a2c817b6db4fa071ee94
           />
         </div>
       )}
