@@ -39,7 +39,7 @@ const AnimatedText: React.FC = () => {
         <div className="flex justify-center items-center gap-2">
           <h2 className="font-bold">Discord</h2>
           <Image
-            src="./discord.png"
+            src="/public/discord.png"
             width={100}
             height={100}
             alt="Discord"
