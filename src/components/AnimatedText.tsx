@@ -26,7 +26,7 @@ const AnimatedText: React.FC = () => {
         <div className={`flex justify-center items-center gap-3`}>
           <h2 className="font-bold">Youtube</h2>
           <Image
-            src="/youtube.png"
+            src="./youtube.png"
             width={200}
             height={200}
             alt="YouTube"
