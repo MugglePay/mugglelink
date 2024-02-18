@@ -26,7 +26,7 @@ const AnimatedText: React.FC = () => {
         <div className={`flex justify-center items-center gap-3`}>
           <h2 className="font-bold">Youtube</h2>
           <Image
-            src="./public/youtube.png"
+            src="./youtube.png"
             width={200}
             height={200}
             alt="YouTube"
@@ -39,7 +39,7 @@ const AnimatedText: React.FC = () => {
         <div className="flex justify-center items-center gap-2">
           <h2 className="font-bold">Discord</h2>
           <Image
-            src="/public/discord.png"
+            src="./discord.png"
             width={100}
             height={100}
             alt="Discord"
@@ -66,7 +66,7 @@ const AnimatedText: React.FC = () => {
         <div className="flex justify-center items-center gap-3">
           <h2 className="font-bold">Telegram</h2>
           <Image
-            src="./public/telegram.png"
+            src="./telegram.png"
             width={100}
             height={100}
             alt="Telegram"
