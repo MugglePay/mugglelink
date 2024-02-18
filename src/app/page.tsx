@@ -124,12 +124,12 @@ export default function Home() {
                 <form>
                   <div className="grid w-full items-center gap-4">
                     <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="name">Name</Label>
-                      <Input id="name" autoComplete="off" disabled/>
+                      <Label htmlFor="name">Name</Label>
+                      <div className="py-4 px-10 border bg-white rounded"></div>
                     </div>
                     <div className="flex flex-col space-y-1.5">
                       <Label htmlFor="email">E-mail</Label>
-                      <Input id="email" className="outline-none" autoComplete="off" disabled />
+                      <div className="py-4 px-10 border bg-white rounded"></div>
                     </div>
                   </div>
                 </form>
