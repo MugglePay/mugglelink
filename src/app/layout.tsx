@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 
-  title: "MuggleLink",
-  description: "Created by MugglePay",
+  title: "MuggleLink is a P2P payment protocol",
+  description: "Accept crypto on telegram and other universal Social Platform."",
 
 };
 
