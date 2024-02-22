@@ -47,7 +47,7 @@ export default function Home() {
           <h3 className="text-base md:text-xl font-semibold">Powered by MuggleLink!</h3>
           <a href="https://t.me/MuggleLink1" target="_blank" rel="noopener noreferrer">
             <Image
-              src="/telegram.png"
+              src="./telegram.png"
               width={32}
               height={32}
               alt="Telegram"
@@ -90,7 +90,7 @@ export default function Home() {
                   <div className="flex gap-1">
                   <div className="h-6 w-auto">
                       <Image
-                        src={"/Arbitrum.png"}
+                        src={"./Arbitrum.png"}
                         width={24}
                         height={24}
                         alt="arbitrum"
@@ -99,7 +99,7 @@ export default function Home() {
                     </div>
                     <div className="h-6 w-auto">
                       <Image
-                        src={"/eth.png"}
+                        src={"./eth.png"}
                         width={24}
                         height={24}
                         alt="eth"
@@ -108,7 +108,7 @@ export default function Home() {
                     </div>
                     <div className="h-6 w-auto">
                       <Image
-                        src={"/tron.png"}
+                        src={"./tron.png"}
                         width={24}
                         height={24}
                         alt="tron"
@@ -118,7 +118,7 @@ export default function Home() {
                   
                     <div className="h-6 w-auto">
                       <Image
-                        src={"/USDT.png"}
+                        src={"./USDT.png"}
                         width={24}
                         height={24}
                         alt="usdt"
@@ -127,7 +127,7 @@ export default function Home() {
                     </div>
                     <div className="h-6 w-auto">
                       <Image
-                        src={"/usdc.png"}
+                        src={"./usdc.png"}
                         width={24}
                         height={24}
                         alt="usdc"
