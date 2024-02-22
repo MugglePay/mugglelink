@@ -25,19 +25,38 @@ export default function Home() {
           <AnimatedText/>
         </div>
         <ul className="list-disc list-inside ml-4 md:ml-10 my-8 text-base md:text-xl">
-            <li>Universal Social Platform Integration</li>
-            <li>No-code, start in minutes</li>
-            <li>Web3 Subscription & Escrow</li>
-            <li>1% fee, settle immediately</li>
+            <li> Accept crypto on telegram and universal Social Platform.</li>
+            <li>Exchange Everything with an escrow payment protocol.</li>
+            <li>The future of social marketplace</li>
         </ul>
-        <div className="flex flex-col gap-4 items-center justify-center ml-2 md:ml-10 mt-4 md:mt-10 text-base md:text-xl font-semibold">
-        <button className="py-2 px-6 md:px-20 bg-white rounded-full font-semibold md:font-bold text-[#8c52ff] hover:bg-[#8c52ff] hover:text-white">
-          Start for Free
-        </button>
-
-
+        <div className="flex items-center justify-center"> {/* Parent container */}
+        <a className="text-xl md:text-3xl" style={{ fontSize: "1.20rem", fontWeight: "normal" }}>
+          Stay tuned and be part of our journey from the very beginning!
+        </a>
+      </div>
+        <div className="flex flex-col gap-4 items-center justify-center ml-2 md:ml-10 mt-s4 md:mt-10 text-base md:text-xl font-semibold">
+        <a href="https://forms.gle/S27vjTi9G2FM4KEa6" target="_blank" rel="noopener noreferrer" className="py-2 px-6 md:px-20 bg-white rounded-full font-semibold md:font-bold text-[#8c52ff] hover:bg-[#8c52ff] hover:text-white">
+        Join the waiting list!
+        </a>
+          
           <h1 className="">Accept Crypto in 1 min!</h1>
+          
+    </div>
+    {/* Powered by MuggleLink and Telegram icon */}
+    <div className="flex items-center justify-center mt-8">
+          <h3 className="text-base md:text-xl font-semibold">Powered by MuggleLink!</h3>
+          <a href="https://t.me/MuggleLink1" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/telegram.png"
+              width={32}
+              height={32}
+              alt="Telegram"
+            />
+          </a>
         </div>
+
+
+
       </div>
       <div className="flex w-full mt-6 px-4 sm:mt-0 sm:px-0">
         <Card className="w-full md:w-[400px] rounded-3xl">
@@ -71,7 +90,7 @@ export default function Home() {
                   <div className="flex gap-1">
                   <div className="h-6 w-auto">
                       <Image
-                        src={"./Arbitrum.png"}
+                        src={"/Arbitrum.png"}
                         width={24}
                         height={24}
                         alt="arbitrum"
@@ -80,7 +99,7 @@ export default function Home() {
                     </div>
                     <div className="h-6 w-auto">
                       <Image
-                        src={"./eth.png"}
+                        src={"/eth.png"}
                         width={24}
                         height={24}
                         alt="eth"
@@ -89,7 +108,7 @@ export default function Home() {
                     </div>
                     <div className="h-6 w-auto">
                       <Image
-                        src={"./tron.png"}
+                        src={"/tron.png"}
                         width={24}
                         height={24}
                         alt="tron"
@@ -99,7 +118,7 @@ export default function Home() {
                   
                     <div className="h-6 w-auto">
                       <Image
-                        src={"./USDT.png"}
+                        src={"/USDT.png"}
                         width={24}
                         height={24}
                         alt="usdt"
@@ -108,7 +127,7 @@ export default function Home() {
                     </div>
                     <div className="h-6 w-auto">
                       <Image
-                        src={"./usdc.png"}
+                        src={"/usdc.png"}
                         width={24}
                         height={24}
                         alt="usdc"
@@ -124,8 +143,8 @@ export default function Home() {
                 <form>
                   <div className="grid w-full items-center gap-4">
                     <div className="flex flex-col space-y-1.5">
-                      <Label htmlFor="name">Name</Label>
-                      <div className="py-4 px-10 border bg-white rounded"></div>
+                    <Label htmlFor="name">Name</Label>
+                    <div className="py-4 px-10 border bg-white rounded"></div>
                     </div>
                     <div className="flex flex-col space-y-1.5">
                       <Label htmlFor="email">E-mail</Label>
